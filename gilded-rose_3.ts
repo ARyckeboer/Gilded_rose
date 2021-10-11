@@ -45,10 +45,10 @@ export class GildedRose {
                         if (item.sellIn < 11) {
                             this.qualityModifier = 2;
                         }
-                        else if (item.sellIn < 6) {
+                        if (item.sellIn < 6) {
                             this.qualityModifier = 3;
                         }
-                        else if (item.sellIn < 0) {
+                        if (item.sellIn < 0) {
                             this.qualityModifier = 0;
                             item.quality = 0;
                         }
