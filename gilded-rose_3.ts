@@ -75,5 +75,6 @@ export class GildedRose {
 
     updateAllQuality() {
         this.items.forEach(this.updateQuality);
+        return this.items;
     }
 }
